@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css" />
-
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cafe Harmony – Portfolio Project</title>
   <link rel="stylesheet" href="style.css" />
@@ -16,33 +14,46 @@
   </section>
 
   <section class="project-showcase">
-  <div class="project-image">
-    <img src="images/cafe-harmony-dashboard.png" alt="Cafe Harmony Excel Dashboard" />
-  </div>
+    <div class="project-image">
+      <img src="images/cafe-harmony-dashboard.png" alt="Cafe Harmony Excel Dashboard" />
+    </div>
 
-  <div class="project-details">
-    <h2>Project Overview</h2>
-    <p>
-      Cafe Harmony is a fictional coffee shop where I created an Excel-based business dashboard...
-    </p>
+    <div class="project-details">
+      <h2>Project Overview</h2>
+      <p>
+        Cafe Harmony is a fictional coffee shop where I created an Excel-based business dashboard...
+      </p>
 
-    <h3>Key Features:</h3>
-    <ul>
-      <li>Interactive Excel dashboard with slicers & charts</li>
-      <li>Monthly sales breakdown by product & region</li>
-      <li>Customer trend and loyalty analysis</li>
-      <li>Forecasting based on historical data</li>
-    </ul>
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Interactive Excel dashboard with slicers & charts</li>
+        <li>Monthly sales breakdown by product & region</li>
+        <li>Customer trend and loyalty analysis</li>
+        <li>Forecasting based on historical data</li>
+      </ul>
 
-    <h3>Tools Used:</h3>    <p>Microsoft Excel, PivotTables, Charts, Formulas</p>    
-    <a href="files/cafe-harmony-dashboard.xlsx" download class="download-btn">📥 Download Excel File</a>  </div></section>
- </div>
-</section>
- 
- 
- 
- 
- 
- 
-  </body>
+      <h3>Tools Used:</h3>
+      <p>Microsoft Excel, PivotTables, Charts, Formulas</p>
+
+      <a href="files/cafe-harmony-dashboard.xlsx" download class="download-btn">
+        📥 Download Excel File
+      </a>
+    </div>
+  </section>
+
+<script>
+  const section = document.querySelector('.project-showcase');
+
+  window.addEventListener('scroll', () => {
+    const top = section.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (top < windowHeight - 100) {
+      section.classList.add('show');
+    }
+  });
+</script>
+
+
+</body>
 </html>
