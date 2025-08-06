@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clarity – Portfolio Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="project-hero">
+    <h1>Clarity</h1>
+    <p class="subtitle">Data Visualization & Reporting • Excel</p>
+  </section>
+
+  <section class="project-showcase">
+    <div class="project-image">
+      <img src="images/clarity-dashboard.png" alt="Clarity Excel Dashboard" />
+    </div>
+
+    <div class="project-details">
+      <h2>Project Overview</h2>
+      <p>
+        Clarity is a data visualization project built to simplify complex datasets using Excel. It presents a clean dashboard with key KPIs, trend analysis, and dynamic visuals.
+      </p>
+
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Interactive KPI tracking with dropdown filters</li>
+        <li>Quarterly trend breakdown with dynamic charts</li>
+        <li>Color-coded indicators for quick analysis</li>
+        <li>Printable report-ready layout</li>
+      </ul>
+
+      <h3>Tools Used:</h3>
+      <p>Microsoft Excel, PivotTables, Charts, Conditional Formatting</p>
+
+      <a href="files/clarity-dashboard.xlsx" download class="download-btn">
+        📥 Download Excel File
+      </a>
+    </div>
+  </section>
+
+  <script>
+    const section = document.querySelector('.project-showcase');
+
+    window.addEventListener('scroll', () => {
+      const top = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (top < windowHeight - 100) {
+        section.classList.add('show');
+      }
+    });
+  </script>
+
+</body>
+</html>
