@@ -17,30 +17,29 @@
 
   <section class="project-showcase">
   <div class="project-image">
-    <img src="images/cafe-harmony-dashboard.png" alt="Cafe Harmony Excel Dashboard" />
+    <img src="images/cafe-harmony-dashboard.png" alt="Cafe Harmony Dashboard">
   </div>
 
   <div class="project-details">
     <h2>Project Overview</h2>
-    <p>
-      Cafe Harmony is a fictional coffee shop where I created an Excel-based business dashboard.
-      It analyzes monthly sales, customer trends, product popularity, and revenue forecasts.
-    </p>
-
-    <h3>Key Features:</h3>
-    <ul>
-      <li>Interactive Excel dashboard with slicers & charts</li>
-      <li>Monthly sales breakdown by product & region</li>
-      <li>Customer trend and loyalty analysis</li>
-      <li>Forecasting based on historical data</li>
-    </ul>
-
-    <h3>Tools Used:</h3>
-    <p>Microsoft Excel, PivotTables, Charts, Formulas</p>
-
-    <a href="files/cafe-harmony-dashboard.xlsx" download class="download-btn">📥 Download Excel File</a>
+    <p>All your project text content...</p>
+    <!-- Everything else under the image -->
   </div>
 </section>
+
+
+<script>
+  const section = document.querySelector('.project-showcase');
+
+  window.addEventListener('scroll', () => {
+    const top = section.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (top < windowHeight - 100) {
+      section.classList.add('show');
+    }
+  });
+</script>
 
 
 </body>
