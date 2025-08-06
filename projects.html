@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Projects Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #1b1f3b;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+
+    .project-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .project-card .info {
+      padding: 20px;
+    }
+
+    .project-card h3 {
+      margin: 0 0 10px;
+      color: #1b1f3b;
+    }
+
+    .project-card a {
+      text-decoration: none;
+      color: #1b1f3b;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Projects</h1>
+    <p>Visual showcase of my portfolio work</p>
+  </header>
+
+  <section class="gallery">
+    <!-- 🌟 Repeat this block for each project -->
+    <div class="project-card">
+      <img src="clarity.jpg" alt="Clarity" />
+      <div class="info">
+        <h3>Clarity care suicide analytics</h3>
+        <a href="clarity.html">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="novamed 1.jpg" alt="Novamed" />
+      <div class="info">
+        <h3>Novamed sales performance analysis and reporting</h3>
+        <a href="novamed.html">View Project →</a>
+      </div>
+    </div>
+
+     <div class="project-card">
+      <img src="novamed 2.jpg" alt="Novamed" />
+      <div class="info">
+        <h3>Novamed Constomer analysis</h3>
+        <a href="novamed.html">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Sterling Heights Hospital Report.jpg" alt="Sterling Heights" />
+      <div class="info">
+        <h3>Sterling Heights Hospital Report</h3>
+        <a href="sterling-heights.html">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Sterling Heights Doctor's Overveiw.jpg" alt="Sterling Heights" />
+      <div class="info">
+        <h3>Sterling Heights Doctor's overveiw</h3>
+        <a href="sterling-heights.html">View Project →</a>
+      </div>
+    </div>  
+
+    <div class="project-card">
+      <img src="Sterling Heights Patients Visit Register.jpg" alt="Sterling Heights" />
+      <div class="info">
+        <h3>Sterling Heights Patients Visit Register</h3>
+        <a href="sterling-heights.html">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="dreamy.jpg" alt="Dreamy Bites" />
+      <div class="info">
+        <h3>Dreamy Bites</h3>
+        <a href="dreamy-bites.html">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="dreamy (2).jpg" alt="Dreamy Bites" />
+      <div class="info">
+        <h3>Dreamy Bites</h3>
+        <a href="dreamy-bites.html">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="Aurora.jpg" alt="Aurora" />
+      <div class="info">
+        <h3>Aurora</h3>
+        <a href="aurora.html">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="puresip.jpg" alt="Puresip" />
+      <div class="info">
+        <h3>Puresip</h3>
+        <a href="puresip.html">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="tri fleet.jpg" alt="Tri-Fleet" />
+      <div class="info">
+        <h3>Tri-Fleet</h3>
+        <a href="tri-fleet.html">View Project →</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <img src="frontier.jpg" alt="Frontier" />
+      <div class="info">
+        <h3>Frontier Sales Overview</h3>
+        <a href="frontier.html">View Project →</a>
+      </div>
+    </div>
+    <!-- 🔁 End repeat block -->
+  </section>
+
+</body>
+</html>
