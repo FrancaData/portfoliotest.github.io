@@ -4,7 +4,129 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Clarity – Portfolio Project</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #222;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .project-hero {
+      background-color: #264653;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .project-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    .project-showcase {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .project-image {
+      text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-in-out;
+    }
+
+    .project-showcase.show .project-image {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-details {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-in-out;
+    }
+
+    .project-showcase.show .project-details {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project-details h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .project-details h3 {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      color: #2a9d8f;
+    }
+
+    .project-details ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .project-details p {
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 20px;
+      background-color: #2a9d8f;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #21867a;
+    }
+
+    @media (min-width: 768px) {
+      .project-showcase {
+        flex-direction: row;
+        gap: 60px;
+      }
+
+      .project-image, .project-details {
+        flex: 1;
+      }
+    }
+  </style>
 </head>
 <body>
 
