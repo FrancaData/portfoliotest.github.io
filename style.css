@@ -26,12 +26,11 @@ body {
 
 .project-showcase {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; /* 💥 stacks it vertically */
   gap: 40px;
   padding: 60px 20px;
-  max-width: 1100px;
+  max-width: 900px;
   margin: auto;
-  align-items: flex-start;
 }
 
 .project-image {
@@ -79,4 +78,14 @@ body {
 
 .download-btn:hover {
   background-color: #5a3d2d;
+}
+.project-image {
+  text-align: center;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
