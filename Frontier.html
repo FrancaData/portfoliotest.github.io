@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontier – Portfolio Project</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9fbfd;
+      color: #111;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .project-hero {
+      background-color: #1b1f3b;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .project-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      font-style: italic;
+      opacity: 0.85;
+    }
+
+    .project-showcase {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .project-image {
+      text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-in-out;
+    }
+
+    .project-showcase.show .project-image {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-details {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-in-out;
+    }
+
+    .project-showcase.show .project-details {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project-details h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .project-details h3 {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      color: #1b1f3b;
+    }
+
+    .project-details ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .project-details p {
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 20px;
+      background-color: #1b1f3b;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #101328;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="project-hero">
+    <h1>Frontier</h1>
+    <p class="subtitle">Geospatial Dashboard • Advanced Excel Mapping</p>
+  </section>
+
+  <section class="project-showcase">
+    <div class="project-image">
+      <img src="frontier.jpg" alt="Frontier Dashboard" />
+    </div>
+
+    <div class="project-details">
+      <h2>Project Overview</h2>
+      <p>
+        Frontier is a high-level Excel dashboard for geospatial and operational analysis. Designed for teams navigating new markets and unfamiliar data terrain, it helps visualize impact, reach, and untapped opportunity.
+      </p>
+
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Interactive map overlays for regional data</li>
+        <li>Performance indicators across multiple zones</li>
+        <li>Market gap analysis for new expansion areas</li>
+        <li>Dynamic filters and segmentation</li>
+      </ul>
+
+      <h3>Tools Used:</h3>
+      <p>Microsoft Excel, Power Query, Custom Charts, Geospatial Mapping Add-ins</p>
+
+      <a href="files/frontier-dashboard.xlsx" download class="download-btn">
+        📥 Download Excel File
+      </a>
+    </div>
+  </section>
+
+  <script>
+    const section = document.querySelector('.project-showcase');
+    window.addEventListener('scroll', () => {
+      const top = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      if (top < windowHeight - 100) {
+        section.classList.add('show');
+      }
+    });
+  </script>
+
+</body>
+</html>
