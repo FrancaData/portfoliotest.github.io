@@ -110,27 +110,6 @@ body {
   transform: translateY(0);
 }
 
-.project-image {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease-in-out;
-  transition-delay: 0s; /* Image animates first */
-}
-
-.project-details {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease-in-out;
-  transition-delay: 0.2s; /* Delay kicks in */
-}
-
-.project-showcase.show .project-image,
-.project-showcase.show .project-details {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
 .project-image img {
   max-width: 100%;
   height: auto;
