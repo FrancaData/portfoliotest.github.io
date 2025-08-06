@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sterling Heights – Portfolio Project</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefefe;
+      color: #222;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .project-hero {
+      background-color: #003049;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .project-hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      font-style: italic;
+      opacity: 0.9;
+    }
+
+    .project-showcase {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .project-image {
+      text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-in-out;
+      flex-wrap: wrap;
+    }
+
+    .project-showcase.show .project-image {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project-image img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (min-width: 768px) {
+      .project-image {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+      }
+
+      .project-image img {
+        width: 32%;
+        margin-bottom: 0;
+      }
+    }
+
+    .project-details {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-in-out;
+    }
+
+    .project-showcase.show .project-details {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project-details h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .project-details h3 {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      color: #669bbc;
+    }
+
+    .project-details ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .project-details p {
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 20px;
+      background-color: #669bbc;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #4b7ea0;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="project-hero">
+    <h1>Sterling Heights</h1>
+    <p class="subtitle">Urban Planning Dashboard • Excel & GIS</p>
+  </section>
+
+  <section class="project-showcase">
+    <div class="project-image">
+      <img src="Sterling Heights Doctor's Overveiw.jpg" alt="Sterling Heights Map Overview" />
+      <img src="Sterling Heights Hospital Report.jpg" alt="Sterling Heights Dashboard" />
+      <img src="Sterling Heights Patients Visit Register.jpg" alt="Sterling Heights Growth Trends" />
+    </div>
+
+    <div class="project-details">
+      <h2>Project Overview</h2>
+      <p>
+        Sterling Heights is a fictional urban development project, where I built an Excel dashboard integrated with GIS visuals to monitor infrastructure growth, land usage, and zoning compliance.
+      </p>
+
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Interactive zoning map integration</li>
+        <li>Growth tracking by district and sector</li>
+        <li>Land use efficiency heatmaps</li>
+        <li>Printable report layout for city planning review</li>
+      </ul>
+
+      <h3>Tools Used:</h3>
+      <p>Microsoft Excel, GIS screenshots, PivotCharts, Conditional Formatting</p>
+
+      <a href="files/sterling-heights-dashboard.xlsx" download class="download-btn">
+        📥 Download Excel File
+      </a>
+    </div>
+  </section>
+
+  <script>
+    const section = document.querySelector('.project-showcase');
+
+    window.addEventListener('scroll', () => {
+      const top = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (top < windowHeight - 100) {
+        section.classList.add('show');
+      }
+    });
+  </script>
+
+</body>
+</html>
