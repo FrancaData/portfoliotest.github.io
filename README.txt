@@ -1,31 +1,109 @@
-Paradigm Shift by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# 🛍️ Frontier Mart Sales Analysis 📊
 
+**A Deep Dive Into Frontier Mart's Sales Performance Using Power BI**
 
-Say hello to Paradigm Shift, my first addition to HTML5 UP in more than a year (!!!).
-Took things in a slightly different direction with this one, partly to mess with CSS
-grid (which this one relies on pretty heavily) but mostly to get back to making weirder
-and more experimental designs/layouts. Anyway, hope you dig it, and thanks for the
-continued support despite the lack of updates :)
+---
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+## 🚀 Project Overview
 
-(* = not included)
+This repository presents **Frontier Mart Sales Analysis**, a powerful business intelligence project designed to uncover sales trends, identify top-performing products, and drive data-driven decisions. The dashboard visualizes **3 years of retail sales data** using **Power BI**, offering a detailed breakdown of orders, sales, profits, and much more!
 
-AJ
-aj@lkn.io | @ajlkn
+---
 
+## 🎯 Key Insights Uncovered
 
-Credits:
+* 📈 **Total Orders**: 4,000+ processed
+* 💰 **Total Sales**: \$9.8M across all channels
+* 🧾 **Total Profit**: \$1.6M net profit generated
+* 📦 **Quantity Sold**: Over 103,000 items moved
+* 🏆 **Top Product**: *Sparkle Dish Gel* with \$470K sales
+* 🛒 **Top Category**: *Household & Cleaning* at \$2.3M
 
-	Demo Images:
-		Unsplash (unsplash.com)
+---
 
-	Icons:
-		Font Awesome (fontawesome.io)
+## 🧠 Features & Dashboard Components
 
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+### 🔍 Filters
+
+* 📅 **Year**: 2021 | 2022 | 2023
+* 💼 **Sales Type**: Direct | Online | Wholesaler
+* 💳 **Payment Mode**: Cash | Online
+* 🗓️ **Month**: Jan – Dec
+
+### 📊 Visual Highlights
+
+* 📉 **Sales Trend**: Monthly sales chart with peak in **December**
+* 🧾 **Sales by Type**: Wholesalers dominate with \$3.4M sales
+* 💸 **Sales by Payment Mode**: 52% via **Online payments**
+* 🛍️ **Sales by Category**: Balanced performance across 5 core product groups
+* 🥇 **Top Performing Products**: Ranked by sales + profit
+
+---
+
+## 🛠️ Tech Stack
+
+* 💻 **Power BI** for data visualization
+* 📊 DAX for measures and calculations
+* 📁 CSV files as data source (or connect your database)
+* 🎨 Custom color theme (Dark Blue, Yellow, White)
+
+---
+
+## 📦 Folder Structure
+
+```bash
+📁 Frontier-Mart-Sales-Analysis/
+│
+├── 📊 PowerBI_Dashboard.pbix
+├── 📁 datasets/
+│   ├── sales_data.csv
+│   └── products.csv
+│
+├── 📁 screenshots/
+│   └── dashboard-preview.png
+│
+└── 📄 README.md
+```
+
+---
+
+## 📌 Use Cases
+
+* 🧑‍💼 **Business Analysts**: To identify high-performing categories & payment trends
+* 🧠 **Executives**: For strategic planning and monthly performance review
+* 🛍️ **Sales Teams**: Understand what’s selling and what’s not
+* 📚 **Data Portfolio**: Showcase BI skills in real-world business context
+
+---
+
+## 📸 Dashboard Preview
+
+![Dashboard Screenshot](./screenshots/dashboard-preview.png)
+
+---
+
+## 🧠 Future Improvements
+
+* 📦 Add inventory analysis
+* 🧾 Include customer segmentation
+* 🌍 Enable geolocation-based sales insights
+* 🔁 Automate data refresh with Power BI Service
+
+---
+
+## 🤝 Let’s Connect
+
+Want to collaborate or have feedback?
+📩 \[Your Email]
+🔗 \[LinkedIn Profile]
+🌐 \[Portfolio Website]
+
+---
+
+## ⭐ Give this project a star if you find it useful!
+
+> Data-driven decisions drive success.
+> – *Frontier Mart BI Team*
+
+---
+
