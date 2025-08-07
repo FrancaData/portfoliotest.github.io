@@ -78,7 +78,10 @@ This repository presents **Frontier Mart Sales Analysis**, a powerful business i
 
 ## 📸 Dashboard Preview
 
-![Dashboard Screenshot](./screenshots/dashboard-preview.png)
+<p align="center">
+  <img src="./screenshots/IMG-20250615-WA0001.jpg" width="800"/>
+</p>
+
 
 ---
 
@@ -94,9 +97,8 @@ This repository presents **Frontier Mart Sales Analysis**, a powerful business i
 ## 🤝 Let’s Connect
 
 Want to collaborate or have feedback?
-📩 \[Your Email]
-🔗 \[LinkedIn Profile]
-🌐 \[Portfolio Website]
+🔗 \https://www.linkedin.com/in/aanu-ogunmodede/
+🌐 \https://francadata.github.io/portfoliotest.github.io/
 
 ---
 
@@ -107,4 +109,4 @@ Want to collaborate or have feedback?
 
 ---
 
-Let me know if you want a **downloadable version**, or a **portfolio write-up version**!
+
