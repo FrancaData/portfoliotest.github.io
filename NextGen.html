@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NextGen Corp – SQL Portfolio Project</title>
+  <title>NextGen Corp – HR Analytics Portfolio Project</title>
 
   <style>
     body {
@@ -50,49 +50,9 @@
       margin: auto;
     }
 
-    .project-image {
-      text-align: center;
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.6s ease-in-out;
-    }
 
-    .project-showcase.show .project-image {
-      opacity: 1;
-      transform: translateY(0);
-    }
 
-    .project-image img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-    }
 
-    @media (min-width: 768px) {
-      .project-image {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-      }
-
-      .project-image img {
-        width: 48%;
-        margin-bottom: 0;
-      }
-    }
-
-    .project-details {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.6s ease-in-out;
-    }
-
-    .project-showcase.show .project-details {
-      opacity: 1;
-      transform: translateY(0);
-    }
 
     .project-details h2 {
       font-size: 2rem;
@@ -115,6 +75,21 @@
       line-height: 1.6;
     }
 
+    .download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #457b9d;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #1d3557;
+    }
+
     .back-home-btn {
       padding: 12px 20px;
       font-size: 1rem;
@@ -133,71 +108,63 @@
       background-color: #5a3d2d;
     }
 
-    .download-btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 20px;
-      background-color: #457b9d;
-      color: white;
-      font-weight: bold;
-      border-radius: 6px;
-      transition: background 0.3s ease;
+    /* Responsive iframe */
+    .iframe-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     }
 
-    .download-btn:hover {
-      background-color: #1d3557;
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 <body>
 
   <section class="project-hero">
-    <h1> NextGen Corp – HR Analytics (SQL) </h1>
-    <p class="subtitle"> Optimizing Retention, Performance, and Salary Fairness </p>
+    <h1>NextGen Corp – HR Analytics</h1>
+    <p class="subtitle">SQL + Interactive 23-Slide Presentation</p>
   </section>
 
   <section class="project-showcase">
-    <div class="project-image">
-      <img src="nextgen1.jpg" alt="NextGen Employee Retention Dashboard" />
-      <img src="nextgen2.jpg" alt="NextGen Salary vs Performance Insights" />
-    </div>
-
     <div class="project-details">
-      <h2>Project Overview</h2>
+      <h2>📊 Project Overview</h2>
       <p>
-        This SQL project analyzes NextGen Corp's employee data to uncover insights on retention, performance, and salary fairness.  
-        Queries were designed to support HR in making data-driven decisions that improve employee satisfaction and reduce turnover.
+        NextGen Corp’s HR analytics project uses SQL to analyze employee retention, performance, and salary fairness.  
+        Findings are presented in a <b>23-slide interactive presentation</b> embedded below.
       </p>
 
-      <h3>Key Features:</h3>
+      <h3>🔎 Key Insights</h3>
       <ul>
-        <li>📉 <b>Retention Analysis</b>: Identified turnover trends across departments.</li>
-        <li>📊 <b>Performance Tracking</b>: Evaluated employee performance distribution.</li>
-        <li>⚖️ <b>Salary vs Performance</b>: Assessed fairness in compensation structures.</li>
-        <li>📋 <b>HR Dashboard</b>: SQL queries ready for visualization in Power BI/Tableau.</li>
+        <li>Employee retention and turnover patterns</li>
+        <li>Performance variability across departments</li>
+        <li>Salary-to-performance fairness analysis</li>
       </ul>
 
-      <h3>Tools Used:</h3>
-      <p>SQL (PostgreSQL / MySQL), Power BI for visualization</p>
+      <h3>⚙️ Tools Used</h3>
+      <p>SQL, PowerPoint</p>
 
-      <a href="files/nextgen-hr-analysis.sql" download class="download-btn">
-        📥 Download SQL File
-      </a>
+      <h3>📽 Presentation</h3>
+      <div class="iframe-container">
+        <iframe src="https://1drv.ms/p/c/1db3fb4400c8255e/IQQuz8PZemjOT4gQGZ6ZEr15AeH3V5l4Pnq0HE2GNopJ9kg?wdAr=1.7777777777777777" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <h3>📂 Project Files</h3>
+      <a href="files/nextgen-queries.sql" download class="download-btn">📥 Download SQL Queries</a>
+      <a href="files/NextGen_db.pptx" download class="download-btn">📥 Download PPTX</a>
     </div>
   </section>
 
-  <script>
-    const section = document.querySelector('.project-showcase');
-    window.addEventListener('scroll', () => {
-      const top = section.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
-      if (top < windowHeight - 100) {
-        section.classList.add('show');
-      }
-    });
-  </script>
-
-  <!-- Home Button at the bottom -->
+  <!-- Home Button -->
   <button onclick="window.location.href='index.html'" class="back-home-btn">
     🏠 Home
   </button>
